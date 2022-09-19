@@ -5,6 +5,7 @@
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
+    "prestart": "source $HOME/.nvm/nvm.sh; nvm use",
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test"
